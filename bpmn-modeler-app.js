@@ -8,20 +8,6 @@ var bpmnModeler = new SoupeBpmnModeler({
   }
 });
 
-function Config() {
-  var storage = window.localStorage || {};
-
-  this.get = function (key) {
-    return storage[key];
-  };
-
-  this.set = function (key, value) {
-    storage[key] = value;
-  };
-}
-
-var config = new Config();
-
 function toggleFullScreen() {
   var element = document.querySelector('html');
 
@@ -106,7 +92,6 @@ function openFile(file, callback) {
 var fileInput;
 
 function openDiagram() {
-  return;
   $(fileInput).trigger('click');
 }
 
