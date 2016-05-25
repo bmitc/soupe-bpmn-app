@@ -1,0 +1,1 @@
+A seed project for how to use pre-packaged version of [soupe-jbpm-js](https://github.com/bmitc/soupe-bpmn-js-bower)
