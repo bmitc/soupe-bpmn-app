@@ -1,0 +1,21 @@
+{
+  "name": "soupe-bpmn-app",
+  "authors": [
+    "carrchang <zhangzhi@mittop.com>"
+  ],
+  "description": "soupe-bpmn-js demo app",
+  "main": "bpmn-modeler-app.js",
+  "license": "MIT",
+  "homepage": "https://github.com/bmitc/soupe-bpmn-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "soupe-bpmn-js": "^2.0.0",
+    "jquery": "^2.2.3"
+  }
+}

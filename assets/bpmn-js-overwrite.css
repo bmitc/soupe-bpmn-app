@@ -1,0 +1,59 @@
+.djs-palette {
+  left: 5px;
+  top: 5px;
+  width: auto !important;
+}
+
+.djs-palette-entries {
+  float: left;
+}
+
+.djs-palette-entries .group {
+  float: left;
+  margin: 5px;
+}
+
+.djs-palette .separator {
+  height: 28px;
+  float: left;
+  margin: 0px 0px 0px 10px;
+  clear: none;
+}
+
+.djs-palette .entry {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+}
+
+.djs-palette-toggle {
+  width: 10px;
+  float: left;
+  background-color: #999;
+}
+
+.djs-palette .djs-palette-toggle {
+  width: 10px;
+  height: 40px;
+}
+
+.djs-palette.open .djs-palette-toggle {
+  width: 10px;
+  height: 40px;
+}
+
+.buttons {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  margin: 0px;
+}
+
+.bjs-powered-by {
+  bottom: 5px !important;
+  right: inherit !important;
+  left: 5px !important;
+}
