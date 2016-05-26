@@ -36,18 +36,15 @@ a:link {
   bottom: 0;
   right: 0;
   width: 260px;
+  margin-top: 41px;
   z-index: 10;
   border-left: 1px solid #ccc;
   overflow: auto;
+  background-color: #f8f8f8;
 }
 
 #js-properties-panel:empty {
   display: none;
-}
-
-#js-properties-panel > .djs-properties-panel {
-  padding-bottom: 70px;
-  min-height: 100%;
 }
 
 @font-face {
@@ -168,7 +165,7 @@ a:link {
 .io-import-export {
   position: absolute;
   left: 5px;
-  bottom: 65px
+  bottom: 5px
 }
 
 .io-import {
