@@ -14,9 +14,10 @@
 }
 
 .djs-palette .separator {
-  height: 28px;
+  height: 30px;
   float: left;
   margin: 0px 0px 0px 10px;
+  border: solid 1px #DDD;
   clear: none;
 }
 
