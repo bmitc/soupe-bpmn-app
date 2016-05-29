@@ -1,7 +1,7 @@
 {
   "name": "soupe-bpmn-app",
   "authors": [
-    "carrchang <zhangzhi@mittop.com>"
+    "carrchang <carr.z.chang@live.com>"
   ],
   "description": "soupe-bpmn-js demo app",
   "main": "bpmn-modeler-app.js",
