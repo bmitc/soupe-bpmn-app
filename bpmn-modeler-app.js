@@ -99,12 +99,10 @@ function setEncoded(link, name, data) {
   var encodedData = encodeURIComponent(data);
 
   if (data) {
-    link.addClass('active').attr({
+    link.attr({
       'href': 'data:application/bpmn20-xml;charset=UTF-8,' + encodedData,
       'download': name
     });
-  } else {
-    link.removeClass('active');
   }
 }
 
@@ -152,18 +150,19 @@ $(document).on('ready', function () {
     openDiagram();
   });
 
-  $('.io-import-export a').click(function (e) {
-    if (!$(this).is('.active')) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-  });
+  // $('.io-import-export a').click(function (e) {
+  //   if (!$(this).is('.active')) {
+  //     e.preventDefault();
+  //     e.stopPropagation();
+  //   }
+  // });
 
   var downloadXMLLink = $('#downloadXMLLink');
 
   downloadXMLLink.on('click', function () {
     saveDiagram(function (err, xml) {
-      setEncoded(downloadXMLLink, 'diagram.bpmn', err ? null : xml);
+      var process = getProcess();
+      setEncoded(downloadXMLLink, (process.name || process.id) + '.bpmn',  err ? null : xml);
     });
   });
 
@@ -171,7 +170,8 @@ $(document).on('ready', function () {
 
   downloadSVGLink.on('click', function () {
     saveSVG(function (err, svg) {
-      setEncoded(downloadSVGLink, 'diagram.svg', err ? null : svg);
+      var process = getProcess();
+      setEncoded(downloadSVGLink, (process.name || process.id) + '.svg', err ? null : svg);
     });
   });
 
