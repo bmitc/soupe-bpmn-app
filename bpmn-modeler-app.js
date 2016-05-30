@@ -150,13 +150,6 @@ $(document).on('ready', function () {
     openDiagram();
   });
 
-  // $('.io-import-export a').click(function (e) {
-  //   if (!$(this).is('.active')) {
-  //     e.preventDefault();
-  //     e.stopPropagation();
-  //   }
-  // });
-
   var downloadXMLLink = $('#downloadXMLLink');
 
   downloadXMLLink.on('click', function () {
